@@ -1,6 +1,6 @@
 # Azure Infrastructure Setup with Terraform
 
-![Infrastructure Diagram](docs/Infra_diagram.png)
+![Infrastructure Diagram](Infra_diagram.png)
 
 This document provides an overview of the infrastructure setup for the "tf-project" using Terraform on Microsoft Azure. It includes details about the architecture, resources created, and step-by-step instructions on how to reproduce this infrastructure.
 
