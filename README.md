@@ -3,7 +3,7 @@
 ## High-Level Design
 
 ### Objective:
-I have successfully created a high-level design for my Azure-based home assignment, achieving the following objectives:
+I have successfully created a high-level design for this project, achieving the following objectives:
 
 1. **High-Level Design:** I have structured my infrastructure using Terraform, employing modularization with separate modules for web service, app service, and db service. This approach enhances manageability and scalability.
 
