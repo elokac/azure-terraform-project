@@ -92,10 +92,7 @@ The `tfstate` folder contains the main configuration for remote state management
 ## Contributing
 
 Contributions to this project are welcome! Feel free to open issues or pull requests for any improvements or bug fixes.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
+---
 
 Refer to the [Infrastructure Setup Guide](docs/infrastructure-setup.md) for detailed instructions on reproducing the infrastructure setup.
 
