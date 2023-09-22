@@ -1,5 +1,47 @@
 # Azure Infrastructure Setup with Terraform
 
+## High-Level Design
+
+### Objective:
+I have successfully created a high-level design for my Azure-based home assignment, achieving the following objectives:
+
+1. **High-Level Design:** I have structured my infrastructure using Terraform, employing modularization with separate modules for web service, app service, and db service. This approach enhances manageability and scalability.
+
+2. **High Availability:** To ensure high availability, I've distributed my resources across Azure Availability Zones (AZs), reducing the risk of service disruptions.
+
+3. **HTTPS Support:** My web service is secured with HTTPS on port 443, ensuring data integrity and user privacy.
+
+4. **Redirects:** I've manually configured Nginx to redirect HTTP requests on port 80 to HTTPS on port 443, enhancing security and user experience.
+
+5. **Modularization:** I've organized my infrastructure into distinct modules, offering clear resource separation and improved maintainability.
+
+6. **Documentation:** I've provided comprehensive documentation, including a README file, to facilitate understanding and replication of my infrastructure setup.
+
+### Tech Stack:
+In terms of technology stack, I've chosen the following components:
+
+1. **Web Service:** I've selected Nginx as the web service, leveraging its lightweight and high-performance characteristics.
+
+2. **Provisioning:** Instead of Ansible, I've opted for Terraform for provisioning Azure resources, harnessing the power of infrastructure-as-code.
+
+3. **Deployment Tool:** For server provisioning, I've utilized Azure-specific tools like `azurerm_virtual_machine_extension`, aligning with Azure best practices.
+
+4. **Operating System:** Ubuntu serves as the operating system for my virtual machines, ensuring compatibility with Nginx and common web application stacks.
+
+### Points to Consider:
+As I continue to develop and manage my infrastructure, I'll consider the following key points:
+
+1. **Monitoring and Maintainability:** I plan to implement Azure Monitor or other monitoring solutions to track resource health and performance. Additionally, automated backup and scaling policies will enhance maintainability.
+
+2. **Capacity, Growth, and Security:** With scalability in mind, I'll regularly review and adjust Azure resource configurations to accommodate increased capacity. Azure Security Center and Network Security Groups (NSGs) will bolster security.
+
+3. **Deploying to a Production Environment:** When deploying to a production environment alongside existing VMs, I'll prioritize proper planning and resource tagging. Utilizing Azure Resource Manager (ARM) templates will ensure consistency and version control.
+
+By addressing these considerations and proactively monitoring and optimizing my resources, I aim to ensure the robustness and security of my production environment.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+# Infrastructure Setup with Terraform
+
 ![Infrastructure Diagram](docs/infra-diagram.png)
 
 This repository contains the Terraform configurations and documentation for provisioning infrastructure on Microsoft Azure.
@@ -57,45 +99,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 Refer to the [Infrastructure Setup Guide](docs/infrastructure-setup.md) for detailed instructions on reproducing the infrastructure setup.
 
-For any questions or assistance, please contact [Your Name](mailto:elokachiejina@gmail.com).
+For any questions or assistance, please contact [elokac](mailto:elokachiejina@gmail.com).
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 
-# Home Assignment High-Level Design
-
-## Objective:
-I have successfully created a high-level design for my Azure-based home assignment, achieving the following objectives:
-
-1. **High-Level Design:** I have structured my infrastructure using Terraform, employing modularization with separate modules for web service, app service, and db service. This approach enhances manageability and scalability.
-
-2. **High Availability:** To ensure high availability, I've distributed my resources across Azure Availability Zones (AZs), reducing the risk of service disruptions.
-
-3. **HTTPS Support:** My web service is secured with HTTPS on port 443, ensuring data integrity and user privacy.
-
-4. **Redirects:** I've manually configured Nginx to redirect HTTP requests on port 80 to HTTPS on port 443, enhancing security and user experience.
-
-5. **Modularization:** I've organized my infrastructure into distinct modules, offering clear resource separation and improved maintainability.
-
-6. **Documentation:** I've provided comprehensive documentation, including a README file, to facilitate understanding and replication of my infrastructure setup.
-
-## Tech Stack:
-In terms of technology stack, I've chosen the following components:
-
-1. **Web Service:** I've selected Nginx as the web service, leveraging its lightweight and high-performance characteristics.
-
-2. **Provisioning:** Instead of Ansible, I've opted for Terraform for provisioning Azure resources, harnessing the power of infrastructure-as-code.
-
-3. **Deployment Tool:** For server provisioning, I've utilized Azure-specific tools like `azurerm_virtual_machine_extension`, aligning with Azure best practices.
-
-4. **Operating System:** Ubuntu serves as the operating system for my virtual machines, ensuring compatibility with Nginx and common web application stacks.
-
-## Points to Consider:
-As I continue to develop and manage my infrastructure, I'll consider the following key points:
-
-1. **Monitoring and Maintainability:** I plan to implement Azure Monitor or other monitoring solutions to track resource health and performance. Additionally, automated backup and scaling policies will enhance maintainability.
-
-2. **Capacity, Growth, and Security:** With scalability in mind, I'll regularly review and adjust Azure resource configurations to accommodate increased capacity. Azure Security Center and Network Security Groups (NSGs) will bolster security.
-
-3. **Deploying to a Production Environment:** When deploying to a production environment alongside existing VMs, I'll prioritize proper planning and resource tagging. Utilizing Azure Resource Manager (ARM) templates will ensure consistency and version control.
-
-By addressing these considerations and proactively monitoring and optimizing my resources, I aim to ensure the robustness and security of my production environment.
