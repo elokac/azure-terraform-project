@@ -42,7 +42,7 @@ By addressing these considerations and proactively monitoring and optimizing my 
 ------------------------------------------------------------------------------------------------------------------------------------------
 # Infrastructure Setup with Terraform
 
-![Infrastructure Diagram](docs/infra-diagram.png)
+![Infrastructure Diagram](docs/Infra_diagram.png)
 
 This repository contains the Terraform configurations and documentation for provisioning infrastructure on Microsoft Azure.
 
