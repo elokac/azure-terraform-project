@@ -31,12 +31,12 @@ module "web_service" {
   resource_group     = module.network.resource_group_name
   web_subnet_id      = module.network.websubnet_id
   virtual_network_id = module.network.network_id
-  web_host_name   = var.web_host_name
-  web_username    = var.web_username
-  web_os_password = var.web_os_password
-  project         = var.project
-  createdby       = var.createdby
-  environment     = var.environment
+  web_host_name      = var.web_host_name
+  web_username       = var.web_username
+  web_os_password    = var.web_os_password
+  project            = var.project
+  createdby          = var.createdby
+  environment        = var.environment
 
 }
 
@@ -54,10 +54,10 @@ module "app_service" {
 }
 
 module "db_service" {
-  source           = "./modules/db_service"
-  location         = module.network.location_id
-  resource_group   = module.network.resource_group_name
-  sqladminuser      = var.sqladminuser
-  sqladminpw       = var.sqladminpw
-  admin-mgt-ip     = var.admin-mgt-ip
+  source         = "./modules/db_service"
+  location       = module.network.location_id
+  resource_group = module.network.resource_group_name
+  sqladminuser   = var.sqladminuser
+  sqladminpw     = var.sqladminpw
+  admin-mgt-ip   = var.admin-mgt-ip
 }
