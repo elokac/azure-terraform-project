@@ -99,7 +99,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 Refer to the [Infrastructure Setup Guide](docs/infrastructure-setup.md) for detailed instructions on reproducing the infrastructure setup.
 
-For any questions or assistance, please contact [elokac](mailto:elokachiejina@gmail.com).
+For any questions or assistance, please contact [elokac](https://www.linkedin.com/in/eloka-chiejina).
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 
