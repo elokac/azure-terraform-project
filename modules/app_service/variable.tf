@@ -1,0 +1,9 @@
+variable "location" {}
+variable "resource_group" {}
+variable "virtual_network_id" {}
+variable "app_username" {}
+variable "app_admin_password" {}
+variable "appsubnet_id" {}
+variable "environment" {}
+variable "project" {}
+variable "createdby" {}
