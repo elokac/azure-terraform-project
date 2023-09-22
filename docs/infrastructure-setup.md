@@ -6,7 +6,7 @@ This document provides an overview of the infrastructure setup for the "tf-proje
 
 ## Overview: 3-Tier Architecture and Information Flow
 
-The "tf-project" infrastructure embraces a 3-tier architecture that ensures a clear and secure information flow while promoting isolation between different components. Here's how information flows within this setup:
+The infrastructure embraces a 3-tier architecture that ensures a clear and secure information flow while promoting isolation between different components. Here's how information flows within this setup:
 
 ### Tier 1: Resource Group and Azure Virtual Network
 
@@ -64,16 +64,3 @@ The "tf-project" infrastructure embraces a 3-tier architecture that ensures a cl
 - It logs access activities for auditing and monitoring purposes, enhancing security and accountability.
 
 In this revised architecture, both application instances within the VMSS and Azure SQL Database instances are placed in Tier 2, as they reside in private subnets within Azure Virtual Network. The Bastion Host and Load Balancers are located in public subnets, serving as the primary entry points for external user traffic and providing secure access to the VMSS and other private resources.
-
-## Project Folder Structure
-
-The project's folder structure is organized to maintain separation between infrastructure provisioning and state management. Here's an overview of the key components:
-
-
-**docs**
-
-- **Infra_diagram.png:** A visual representation of the infrastructure diagram.
-- **Infrastructure-setup.md:** Documentation explaining the overall infrastructure setup and architecture.
-- **setup-steps.md:** Documentation outlining the step-by-step process to reproduce the infrastructure.
-
-**tf-project**
