@@ -40,24 +40,24 @@ module "web_service" {
 
 }
 
-# module "app_service" {
-#   source             = "./modules/app_service"
-#   location           = module.network.location_id
-#   resource_group     = module.network.resource_group_name
-#   virtual_network_id = module.network.network_id
-#   appsubnet_id       = module.network.appsubnet_id
-#   app_username       = var.app_username
-#   app_admin_password = var.app_admin_password
-#   project            = var.project
-#   createdby          = var.createdby
-#   environment        = var.environment
-# }
+module "app_service" {
+  source             = "./modules/app_service"
+  location           = module.network.location_id
+  resource_group     = module.network.resource_group_name
+  virtual_network_id = module.network.network_id
+  appsubnet_id       = module.network.appsubnet_id
+  app_username       = var.app_username
+  app_admin_password = var.app_admin_password
+  project            = var.project
+  createdby          = var.createdby
+  environment        = var.environment
+}
 
-# module "db_service" {
-#   source           = "./modules/db_service"
-#   location         = module.network.location_id
-#   resource_group   = module.network.resource_group_name
-#   sqladminuser      = var.sqladminuser
-#   sqladminpw       = var.sqladminpw
-#   admin-mgt-ip     = var.admin-mgt-ip
-# }
+module "db_service" {
+  source           = "./modules/db_service"
+  location         = module.network.location_id
+  resource_group   = module.network.resource_group_name
+  sqladminuser      = var.sqladminuser
+  sqladminpw       = var.sqladminpw
+  admin-mgt-ip     = var.admin-mgt-ip
+}
